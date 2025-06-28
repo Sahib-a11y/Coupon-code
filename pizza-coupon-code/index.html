@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Cart with Coupon</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="cart-container">
+    <h1>Pizaa Cart</h1>
+
+    <!-- Cart Items -->
+    <div class="cart-items">
+      <div class="item">
+        <div class="item-info">
+          <h3>Margherita Pizza</h3>
+          <p>Quantity: 1</p>
+        </div>
+        <div class="item-price">₹299</div>
+      </div>
+
+      <div class="item">
+        <div class="item-info">
+          <h3>Pepsi 500ml</h3>
+          <p>Quantity: 2</p>
+        </div>
+        <div class="item-price">₹80</div>
+      </div>
+    </div>
+
+    <!-- Coupon Input -->
+    <div class="coupon-section">
+      <h2>Apply Coupon</h2>
+      <form class="coupon-form">
+        <input type="text" class="coupon-input" placeholder="Enter coupon code" id="input" required />
+        <button type="submit" class="apply-btn" id="aply-btn">Apply</button>
+      </form>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <p>Subtotal: <span id="sub-total">₹379</span></p>
+      <p>Discount: <span id="dis-amt">₹0</span></p>
+      <p class="total">Total: <span id="total">₹379</span></p>
+      <button class="checkout-btn" id="pro-btn">Proceed to Checkout</button>
+    </div>
+    <script src="index.js"></script>
+  </div>
+</body>
+</html>
